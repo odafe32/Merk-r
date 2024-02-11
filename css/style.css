@@ -8,7 +8,6 @@ Last change: 26 November 2023
 Primary use: Multipurpose Template  
 -------------------------------------------------------------------*/
 
-
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -118,7 +117,7 @@ Primary use: Multipurpose Template
 47. Post previews 3.
 48. Newsletter.
     48.1. Newsletter elegant.
-    48.2. Newsletter strong.
+    48.2. Newsletter strong.ma
     48.3. Newsletter modern.
 49. Contact.
 50. Contact 1.
@@ -240,9 +239,7 @@ Primary use: Multipurpose Template
    Common styles
    ============================== */
   
-:root{
-    scroll-behavior: auto;
-}
+
 html{
     -ms-overflow-style: scrollbar;
 }
@@ -413,9 +410,7 @@ img:not([draggable]), embed, object, video{
    -moz-transition: none !important;
    will-change: transform;
 }
-.parallax-mousemove-follow{
-    -moz-transition: none !important;
-}
+
 @media not all and (min-resolution:.001dpcm) { @media {
     .parallax-mousemove,
     .parallax-mousemove-follow{
@@ -3559,7 +3554,7 @@ a.logo:hover{
     text-align: left;
     background: rgba(255,255,255, .98);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.025),0px 1px 1px 0px rgba(0, 0, 0, 0.01),0px 0px 50px 0px rgba(0, 0, 0, 0.07);
-    z-index: 1000;
+    z-index: 100;
     transition: all 0.2s var(--ease-default);
 }
 .main-nav.sticky{

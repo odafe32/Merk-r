@@ -113,14 +113,14 @@
         $(".mobile-on .desktop-nav > ul").css("max-height", $(window).height() - $(".main-nav").height() - 20 + "px");
         
         // Mobile menu style toggle
-        if ($(window).width() <= 1024) {
+        if ($(window).width() <= 901) {
             $(".main-nav").addClass("mobile-on");
             if (!($(".mobile-nav").hasClass("active"))) {
                 desktop_nav.css("display", "none");
             }
         }
         else 
-            if ($(window).width() > 1024) {
+            if ($(window).width() > 901) {
                 $(".main-nav").removeClass("mobile-on");
                 desktop_nav.css("display", "block");
             }
@@ -132,7 +132,9 @@
                 
         if ($(".main-nav").hasClass("transparent")){
            $(".main-nav").addClass("js-transparent"); 
-        } else if (!($(".main-nav").hasClass("dark"))){
+        } else 
+        
+        if (!($(".main-nav").hasClass("dark"))){
            $(".main-nav").addClass("js-no-transparent-white");
         }
         
@@ -157,7 +159,10 @@
         // Mobile menu toggle
         
         mobile_nav.click(function(){
-                  
+              
+            // Add this line to toggle the visibility of the logo
+            $(".nav-logo-wrap .logo").toggleClass("hide-logo");
+        
             if (desktop_nav.hasClass("js-opened")) {
                 desktop_nav.slideUp("slow", "easeOutExpo").removeClass("js-opened");
                 $(this).removeClass("active");
@@ -172,8 +177,9 @@
                     $(window).scrollTo(".main-nav", "slow"); 
                 }                
             }   
-                     
+                         
         });
+        
         
         $(document).on("click", function(event){            
             if ($(window).width() <= 1024) {
@@ -1741,7 +1747,7 @@ function init() {
     document.removeEventListener('touchend', onInitialPointerMove);
   }
 
-  /**
+  /**viv
    * When the polfyill first loads, assume the user is in keyboard modality.
    * If any event is received from a pointing device (e.g. mouse, pointer,
    * touch), turn off keyboard modality.

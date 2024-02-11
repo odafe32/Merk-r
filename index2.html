@@ -17,6 +17,16 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <meta name="description" content="Markaların dijital dünyadaki gücünü artırmak için tasarım, yazılım ve pazarlama alanlarında çözümler sunuyoruz. Tasarım, geliştirme ve pazarlama - dijital başarınız için tek elden hizmet." />
         <meta name="google-site-verification" content="K5J3CUBaBtppVrEMfpJN4lc6LpjpeuWRZYuvikF2L2s" />
         
+          <!-- Google Fonts -->
+          <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap"/>
+          <!-- Template Vendor's Stylesheet -->
+      <link rel="stylesheet" type="text/css" href="./page -loader-media/css/vendor.css"/>      
+        <!-- Template Main Stylesheet -->
+          <link rel="stylesheet" type="text/css" href="./page -loader-media/css/main.css"/>
+          <!-- Favicons & App Icons -->
+             <!-- Favicon -->
+             <link rel="icon" href="images/favicon.png" type="image/png" sizes="any">
+             <link rel="icon" href="images/favicon.svg" type="image/svg+xml">         
         <!-- Favicon -->
         <link rel="icon" href="images/favicon.png" type="image/png" sizes="any">
         <link rel="icon" href="images/favicon.svg" type="image/svg+xml">         
@@ -77,93 +87,286 @@ src="https://www.facebook.com/tr?id=720392988626914&ev=PageView&noscript=1"
 </head>
     <body class="appear-animate" id="siradisi">
        
-        <!-- Page Loader -->        
-        <div class="page-loader">
-            <div class="loader">Yükleniyor...</div>
-        </div>
+        
+        <!-- Page Loader -->   
+        <!-- <div class="page-loader gradient">
+            <div class="loader">Loading...</div>
+        </div> -->
         <!-- End Page Loader -->
-
+      <!-- Transition Curtain-->
+      <!-- TRANSITION CURTAINS -->
+      <!-- page curtain AJAX transition -->
+      <div class="curtain transition-curtain" id="js-page-transition-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Default Rectangle -->
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <!-- - Default Rectangle -->
+            <!-- Curve Top -->
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <!-- - Curve Top -->
+            <!-- Curve Bottom -->
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+            <!-- - Curve Bottom -->
+          </svg>
+        </div>
+      </div>
+      <!-- - page curtain AJAX transition -->
+      <!-- header curtain show/hide -->
+      <div class="header-curtain curtain" id="js-header-curtain">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Default Rectangle -->
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <!-- - Default Rectangle -->
+            <!-- Curve Top -->
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <!-- - Curve Top -->
+            <!-- Curve Bottom -->
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+            <!-- - Curve Bottom -->
+          </svg>
+        </div>
+      </div>
+      <!-- - header curtain show/hide -->
+      <!-- header curtain AJAX transition -->
+      <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
+        <div class="curtain__wrapper-svg">
+          <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Default Rectangle -->
+            <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+            <!-- - Default Rectangle -->
+            <!-- Curve Top -->
+            <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+            <!-- - Curve Top -->
+            <!-- Curve Bottom -->
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+            <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+            <!-- - Curve Bottom -->
+          </svg>
+        </div>
+      </div>
+      <!-- - header curtain AJAX transition -->
+      <!-- - TRANSITION CURTAINS -->
+      <!-- Cursor Follower-->
+      <div class="cursor" id="js-cursor">
+        <div class="cursor__wrapper">
+          <!-- circles -->
+          <div class="cursor__follower">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6;"></circle>
+              <circle id="outer" cx="25" cy="25" r="24" style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
+            </svg>
+          </div>
+          <!-- - circles -->
+          <!-- arrows -->
+          <div class="cursor__arrows">
+            <div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
+            <div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
+            <div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
+            <div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
+          </div>
+          <!-- - arrows -->
+          <!-- label holder -->
+          <div class="cursor__label"></div>
+          <!-- - label holder -->
+          <!-- icon holder -->
+          <div class="cursor__icon material-icons"></div>
+          <!-- - icon holder -->
+        </div>
+      </div>
         <!-- Skip to Content -->
-        <a href="#main" class="btn skip-to-content">İçeriği Geç</a>
+        <a href="#main" class="btn skip-to-content">Skip to Content</a>
         <!-- End Skip to Content -->
         
         <!-- Page Wrap -->
         <div class="page" id="top">
             
-            <!-- Navigation Panel -->
-            <nav class="main-nav transparent stick-fixed wow-menubar">
-                <div class="main-nav-sub full-wrapper">
-                    
-                    <!-- Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
-                    If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
-                    image size for support of retina screens. See details in the template documentation. *) -->
-                    <div class="nav-logo-wrap local-scroll">
-                        <a href="index.html" class="logo">
-                            <img src="images/logo-dark.svg" alt="Your Company Logo" width="105" height="34" />
-                        </a>
+          <!-- Navigation Panel -->
+          <nav class="main-nav dark  light-after-scroll stick-fixed wow-menubar wch-unset">
+            <div class="main-nav-sub container">
+                
+                <!-- Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
+                If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
+                image size for support of retina screens. See details in the template documentation. *) -->
+                <div class="nav-logo-wrap position-static pe-lg-4 me-lg-5 local-scroll">
+                    <a href="index.html" class="logo">
+                        <img src="images/merkur-tekstil-logo-white.svg" alt="Merkür Tekstil" width="180" height="40" class="logo-white" />
+                        <img src="images/merkur-tekstil-logo-black.svg" alt="Merkür Tekstil" width="180" height="40" class="logo-dark" />
+                    </a>
+                </div>
+                
+                <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page" data-arts-theme-text="dark" data-arts-header-sticky-theme="bg-white" data-arts-header-logo="primasry" data-arts-header-sticky-logo="primarry" data-arts-header-overlay-theme="lirght" data-arts-header-overlay-background="#ffffff">
+                    <!-- top bar -->
+                    <div class="header__container header__controls">
+                      <div class="row justify-content-between align-items-center">
+                        <!-- logo -->
+                        <div class="col-auto header__col header__col-left"><a class="logo" href="index.html">
+                            <div class="logo__wrapper-img">
+                         
+                              <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary" src="img/generasl/logo-white.svg" alt="Merkür Tekstil" height="20"/>
+                            </div></a>
+                        </div>
+                        <!-- - logo -->
+                        <!-- burger icon -->
+                        <div class="col-auto header__col">
+                          <div class="header__burger" id="js-burger" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">
+                            <div class="header__burger-line"></div>
+                            <div class="header__burger-line"></div>
+                            <div class="header__burger-line"></div>
+                          </div>
+                        </div>
+                        <!-- - burger icon -->
+                        <!-- "back" button for submenu nav -->
+                        <div class="header__overlay-menu-back" id="js-submenu-back">
+                          <div class="arrow arrow-left js-arrow arrow_mini" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                            </svg>
+                            <div class="arrow__pointer arrow-left__pointer"></div>
+                            <div class="arrow__triangle"></div>
+                          </div>
+                        </div>
+                        <!-- - "back" button for submenu nav -->
+                      </div>
                     </div>
+                    <!-- - top bar -->
+                    <!-- fullscreen overlay container -->
+                    <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings">
+                      <!-- fullscreen menu -->
+                      <div class="header__wrapper-menu">
+                        <ul class="menu-overlay js-menu-overlay">
+                          <li class="menu-item-has-children"><a class="h2" style="text-decoration: none; color:#4a4a4a;"  href="./index.html" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Anasayfa</div></a>
+                          
+                          </li>
+                          <li class="menu-item-has-children"><a class="h2" style="text-decoration: none; color:#4a4a4a;"  href="./hakkimizda.html" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Kurumsal</div></a>
+                         
+                          </li>
+                          <li class="menu-item-has-children"><a class="h2" style="text-decoration: none; color:#4a4a4a;"  href="./kalite.html" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">kalite</div></a>
+                  
+                          </li>
+                          <li class="menu-item-has-children"><a class="h2" style="text-decoration: none; color:#4a4a4a;"  href="./urunler.html" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">    Ürünlerimiz</div></a>
+                  
+                          </li>
+                          <li class="menu-item-has-children"><a class="h2" style="text-decoration: none; color:#4a4a4a;"  href="./iletisim.html" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">İletişim</div></a>
+                      
+                          </li>
+                          <li class="menu-item-has-children"><a class="h2" style="text-decoration: none; color:#4a4a4a;"  href="./iletisim.html" data-pjax-link="overlayMenu">
+                            <div class="menu-overlay__item-wrapper split-text js-split-text " data-split-text-type="lines">Tr </div></a>
+                          <ul class="sub-menu">
+                            <li class="menu-item-has-children"><a class="h3" style="text-decoration: none; color:#4a4a4a;"  href="en/index.html" data-pjax-link="overlayMenu">
+                                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">English</div></a>
+                             
+                            </li>
+                            <li class="menu-item-has-children"><a class="h3" style="text-decoration: none; color:#4a4a4a;"  href="rs/index.html" data-pjax-link="overlayMenu">
+                                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Russian</div></a>
+                             
+                            </li>
+                            <li class="menu-item-has-children"><a class="h3" style="text-decoration: none; color:#4a4a4a;"  href="es/index.html" data-pjax-link="overlayMenu">
+                                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Espanol</div></a>
+                             
+                            </li>
+                            <li class="menu-item-has-children"><a class="h3" style="text-decoration: none; color:#4a4a4a;"  href="ar/index.html" data-pjax-link="overlayMenu">
+                                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Arabic</div></a>
+                             
+                            </li>
+                        
+                          </ul>
+                          <li class="menu-item-has-children"><a class="h2" style="text-decoration: none; color:#4a4a4a;"  href="https://nakismarket.com" data-pjax-link="overlayMenu">
+                            <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Nakış Market</div></a>
                     
-                    <!-- Mobile Menu Button -->
-                    <div class="mobile-nav" role="button" tabindex="0">
-                        <i class="mobile-nav-icon"></i>
-                        <span class="visually-hidden">Menu</span>
-                    </div>
-                    
-                    <!-- Main Menu -->
-                    <div class="inner-nav desktop-nav">
-                        <ul class="clearlist local-scroll">
-                            
-                            <li>
-                                <a href="index.html" >Anasayfa </a>
-                            </li>
-                            <li>
-                                <a href="hakkimizda.html" >Hakkımızda </a>
-                            </li>
-                            <li>
-                                <a href="hizmetlerimiz.html" >Hizmetlerimiz </a>
-                            </li>
-                            <li>
-                                <a href="projeler.html" >Projeler </a>
-                            </li>
-
-                            <li>
-                                <a href="referanslar.html" >Referanslarımız </a>
-                            </li>
-                            <li>
-                                <a href="iletisim.html" >İletişim </a>
-                            </li>
-                            
+                        </li>
+                        </li>
                         </ul>
-                        
-                        <ul class="items-end clearlist">
-                            
-                            <!-- Languages -->
-                            <li id="tr">
-                                <a href="index.html" class="mn-has-sub opacity-1" >Türkçe <i class="mi-chevron-down"></i></a>
-                                
-                                <ul class="mn-sub to-left">                                    
-                                    <li><a href="en/index.html">English</a></li>
-                                    <li><a href="de/index.html">Deutsch</a></li>
-                                    <li><a href="ar//index.html">عربي</a></li>
-                                    <li><a href="fr/index.html">Français</a></li>
-                                    <li><a href="es/index.html">Español</a></li>
-                                    <li><a href="it/index.html">Italiano</a></li>
-                                </ul>
-                                
-                            </li>
-                            <!-- End Languages -->  
-                                                      
-                            <li><a href="iletisim.html" class="opacity-1 no-hover"><span class="link-hover-anim underline" data-link-animate="y">Teklif Formu</span></a></li>
-                            
-                        </ul>                        
-                        
+                      </div>
+                      <!-- - fullscreen menu -->
+                      <!-- fullscreen widgets -->
+                      <div class="header__wrapper-overlay-widgets">
+                        <div class="row">
+                          <!-- widget TEXT -->
+                          <div class="col-lg-4 header__widget">
+                            <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">Contacts</div>
+                            <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                              <p><a href="rhye@example.com">rhye@example.com</a><br/>+1 859-795-9217<br/>+1 716-913-6279<br/>
+                              </p>
+                            </div>
+                          </div>
+                          <!-- - widget TEXT -->
+                          <!-- widget TEXT -->
+                          <div class="col-lg-4 header__widget">
+                            <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">Office</div>
+                            <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                              <p>4903 Mayo Street<br/>Cincinnati, KY 45202<br/>USA<br/>
+                              </p>
+                            </div>
+                          </div>
+                          <!-- - widget TEXT -->
+                          <!-- widget TEXT -->
+                          <div class="col-lg-4 header__widget">
+                            <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">Want to Work with Me?</div>
+                            <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                              <p><a href="page-inner-contacts-1.html">Get in Touch</a><br/>
+                              </p>
+                            </div>
+                          </div>
+                          <!-- - widget TEXT -->
+                        </div>
+                      </div>
+                      <!-- - fullscreen widgets -->
                     </div>
-                    <!-- End Main Menu -->
+                    <!-- - fullscreen overlay container -->
+                  </header>
+                
+                <!-- Main Menu -->
+                <div class="inner-nav desktop-nav">
+                    <ul class="clearlist local-scroll justify-content-start">                            
+                        <li><a href="index.html" class="active" data-btn-animate="y">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html" data-btn-animate="y">Kurumsal</a></li>
+                        <li><a href="kalite.html" data-btn-animate="y">Kalite</a></li>
+                        <li><a href="surdurulebilirlik.html" data-btn-animate="y">Sürdürülebilirlik</a></li>
+                        <li><a href="urunler.html" data-btn-animate="y">Ürünlerimiz</a></li>
+                        <li><a href="iletisim.html" data-btn-animate="y">İletişim</a></li>
+                    </ul>
+                    
+                    <ul class="items-end clearlist local-scroll">
+                        
+                        <!-- Languages -->
+                        <li>
+                            <a href="#" class="mn-has-sub opacity-1" data-btn-animate="y">Tr <i class="mi-chevron-down"></i></a>
+                            
+                            <ul class="mn-sub to-left">                                    
+                                <li><a href="en/index.html">English</a></li>
+                                <li><a href="ru/index.html">Russian</a></li>
+                                <li><a href="es/index.html">Espanol</a></li>
+                                <li><a href="ar/index.html">Arabic</a></li>
+                                                                     
+                            </ul>
+                            
+                        </li>
+                        <!-- End Languages -->  
+                                                  
+                                                    
+                        <li><a href="iletisim.html" class="opacity-1 no-hover"><span class="link-hover-anim underline" data-link-animate="y">Teklif Formu</span></a></li>
+                            
+                        
+                    </ul>                     
                     
                 </div>
-            </nav>
-            <!-- End Navigation Panel -->
-            
+                <!-- End Main Menu -->
+                
+            </div>
+        </nav>
+        <!-- End Navigation Panel -->
             <main id="main">
             
                 <!-- Home Section -->
@@ -1552,7 +1755,15 @@ src="https://www.facebook.com/tr?id=720392988626914&ev=PageView&noscript=1"
         
         </div>
         <!-- End Page Wrap -->      
-        
+              <!-- - Slider Textures Shaders -->
+      <!-- VENDOR SCRIPTS -->
+   <script src="./page -loader-media/js/vendor.js"></script>
+   <!-- - VENDOR SCRIPTS -->
+   <!-- COMPONENTS -->
+<script src="./page -loader-media/js/components.js"></script>  
+   <!-- - COMPONENTS -->
+   <script src="https://maps.googleapis.com/maps/api/js?callback=Function.prototype&amp;key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc" async></script>
+     <!-- End JS -->       
        
         <!-- JS -->
         <script src="js/jquery.min.js"></script>

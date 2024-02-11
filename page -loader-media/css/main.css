@@ -127,10 +127,18 @@
  * ==========================================================================
  * ==========================================================================
  */
+ .logo {
+  display: block; /* Adjust this to your logo's default display property */
+}
+
+.hide-logo {
+  display: none !important; /* Ensure the logo is hidden when this class is applied */
+}
+
 
  :root {
   /* Fonts */
-  --font-primary: "Raleway", sans-serif;
+  --font-primary: "Raleway", sans-serif; 
   --font-secondary: "Cinzel", serif;
   /* Colors */
   --color-dark-1: #111111;
@@ -262,7 +270,6 @@ body {
 }
 
 .body_lock-scroll {
-  overflow: hidden;
   position: fixed;
   position: -webkit-sticky;
   position: sticky;
@@ -2980,7 +2987,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 .header__container {
   position: relative;
-  z-index: 501;
+  z-index: 9999;
 }
 
 .header__col {
@@ -3058,7 +3065,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   position: relative;
   width: 100%;
   max-width: 50%;
-  margin: auto 0;
+ 
 }
 
 .header__wrapper-overlay-menu {
@@ -3150,6 +3157,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
   .header__widget {
     margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .header__widget:last-child {
     margin-bottom: 2em;

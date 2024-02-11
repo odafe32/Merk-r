@@ -98,33 +98,6 @@
 	/**
 	 * Use passive listeners to improve scrolling performance
 	 */
-	jQuery.event.special.touchstart = {
-		setup: function (_, ns, handle) {
-			if (ns.includes('noPreventDefault')) {
-				this.addEventListener('touchstart', handle, {
-					passive: false
-				});
-			} else {
-				this.addEventListener('touchstart', handle, {
-					passive: true
-				});
-			}
-		}
-	};
-	
-	jQuery.event.special.touchend = {
-		setup: function (_, ns, handle) {
-			if (ns.includes('noPreventDefault')) {
-				this.addEventListener('touchend', handle, {
-					passive: false
-				});
-			} else {
-				this.addEventListener('touchend', handle, {
-					passive: true
-				});
-			}
-		}
-	};
 	
 	/**
 	 * Extend default easing functions set
@@ -4838,26 +4811,6 @@
 			this.run();
 			
 		}
-		_stick() {
-			// Check if the sticky header exists
-			if (!this.$stickyHeader.length) {
-				return;
-			}
-		
-			// Get the scroll position
-			const scrollPos = $(window).scrollTop();
-		
-			// Define the offset where you want the sticky behavior to start
-			const stickyOffset = 1;
-		
-			// Toggle classes based on scroll position
-			if (scrollPos > stickyOffset) {
-				this.$stickyHeader.addClass(this.stickyTheme + ' ' + this.stickyClass);
-			} else {
-				this.$stickyHeader.removeClass(this.stickyTheme + ' ' + this.stickyClass);
-			}
-		}
-		
 		
 	
 		run() {
